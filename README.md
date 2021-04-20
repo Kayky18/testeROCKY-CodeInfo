@@ -4,8 +4,8 @@ Site para a vaga de estágio da ROCKY Full Digital Performance.
 O projeto contempla HTML, CSS e Javascript. É responsivo ao desktop e mobile.
 
 ## Como acessar o site:
-1.Baixe o repositório
-2.Abra o arquivo "index.html"
+1.Baixe o repositório.
+2.Abra o arquivo "index.html".
 
 ## Como Navegar pelo Site:
 1. O menu de navegação vai para as partes da página que você deseja.
