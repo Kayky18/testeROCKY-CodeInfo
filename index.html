@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CodeInfo - Informações Sobre Tecnologia </title>
+</head>
+<body>
+    <header>
+        <a href="#banner" class="logo">Code<span>Info</span></a>
+
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+
+        <ul class="navegacao">
+            <li><a href="#banner"onclick="toggleMenu();">Home</a></li>
+            <li><a href="#linguagens-prog"onclick="toggleMenu();">Linguagens de Programação</a></li>
+            <li><a href="#noticia"onclick="toggleMenu();">Notícia</a></li>
+            <li><a href="#contato-principal"onclick="toggleMenu();">Contato</a></li>
+        </ul>
+        
+    </header>
+
+    <section class="banner" id="banner">
+        <div class="principal-menu">
+            <h2>Saiba Mais sobre Linguagens de Programação</h2>
+            <p>As linguagens mais usadas Atualmente</p>
+            <a href="#linguagens-prog" class="button">Saiba Mais</a>
+        </div>
+
+    </section>
+
+   
+    
+    <section class="linguagens-prog" id="linguagens-prog">
+            
+
+        <div class="titulo-ling">
+            <h2 class="titulo">As Principais Linguagens De Programação</h2>
+            <p style="text-align: center;"> Linguagem de programação é o idioma que você vai utilizar para comunicar ao computador e escrever os códigos. Assim como na comunicação entre humanos, você emite uma mensagem e precisa que seu receptor a entenda e responda.</p>
+        </div>
+
+        <div class="conteudo"><!--Inicio Conteúdo-->
+
+            <!--Caixa JavaScript-->
+            <div class="linguagens-caixa">
+
+                <div class="img-conteudo">
+                    <img src="imagens/linguagens/javascript.png" alt="">
+                </div>
+
+                <div class="legenda">
+                    <h3>JavaScript</h3>
+                </div>
+
+                <p class="descricao-ling">JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.<br><br>
+                <a href="javascript.html">Leia Mais</a></p>
+                
+                
+            </div>
+
+            <!--Caixa Java-->
+            <div class="linguagens-caixa">
+                <div class="img-conteudo">
+                    <img src="imagens/linguagens/java.jpg" alt="">
+                </div>
+                <div class="legenda">
+                    <h3>Java</h3>
+                </div>
+                <p class="descricao-ling">Java é o ambiente computacional, ou plataforma, criada pela empresa estadunidense Sun Microsystems, e vendida para a Oracle depois de alguns anos. A plataforma permite desenvolver programas utilizando a linguagem de programação Java.<br><br>
+                    <a href="java.html">Leia Mais</a></p>
+            </div>
+
+            <!--Caixa PHP-->
+            <div class="linguagens-caixa">
+                <div class="img-conteudo">
+                    <img src="imagens/linguagens/php.png" alt="">
+                </div>
+                <div class="legenda">
+                    <h3>PHP</h3>
+                </div>
+                <p class="descricao-ling">PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web.<br><br>
+                    <a href="php.html">Leia Mais</a></p>
+            </div>
+
+            <!--Caixa Python-->
+            <div class="linguagens-caixa">
+                <div class="img-conteudo">
+                    <img src="imagens/linguagens/python.png" alt="">
+                </div>
+                <div class="legenda">
+                    <h3>Python</h3>
+                </div>
+                <p class="descricao-ling">Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.<br><br>
+                    <a href="python.html">Leia Mais</a> </p>
+            </div>
+
+            <!--Caixa C++-->
+            <div class="linguagens-caixa">
+                <div class="img-conteudo">
+                    <img src="imagens/linguagens/c++.jpg" alt="">
+                </div>
+                <div class="legenda">
+                    <h3>C++</h3>
+                </div>
+                <p class="descricao-ling">C++ é uma linguagem de programação compilada multi-paradigma e de uso geral. Desde os anos 1990 é uma das linguagens comerciais mais populares, sendo bastante usada também na academia por seu grande desempenho e base de utilizadores.<br><br>
+                    <a href="c++.html">Leia Mais</a> </p>
+            </div>
+
+            <!--Caixa C-->
+            <div class="linguagens-caixa">
+                <div class="img-conteudo">
+                    <img src="imagens/linguagens/c.jpg" alt="">
+                </div>
+                <div class="legenda">
+                    <h3>C</h3>
+                </div>
+                <p class="descricao-ling">C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural, padronizada pela Organização Internacional para Padronização, criada em 1972 por Dennis Ritchie na empresa AT&T Bell Labs para desenvolvimento do sistema operacional Unix. <br><br>
+                    <a href="c.html">Leia Mais</a></p>
+            </div>
+
+
+
+        </div><!--Fim Conteúdo-->
+
+        <!--Outras-->
+        <div class="titulo-ling">
+            <a href="#" class="button">Outras Linguagens</a>
+        </div>
+
+    </section>
+
+     <!--Novidades Inicio-->
+     <section class="noticia" id="noticia">
+        <div class="conteudo-principal">
+            <div class="conteudo">
+                <h2 class="titulo">Notícia</h2>
+                <p>
+                    Notícias que chamaram a nossa atenção :<br><br>
+                    
+                    <strong> Célula de biocombustível utiliza suor humano para gerar energia:</strong> o dispositivo, desenvolvido por cientistas japoneses, gera energia elétrica a partir do lactato presente no suor, abrindo a possibilidade de aparelhos eletrônicos vestíveis como relógios inteligentes que não precisam de baterias. Os pesquisadores conseguiram manter ligado um medidor de atividades comercialmente disponível por uma hora e meia utilizando apenas uma gota de suor artificial. As informações são da Tokyo University of Science.<br><br>
+                    
+                    <strong> Smartphone que se transforma em tablet:</strong> o “Fold ‘n Roll” da TCL pode ser utilizado como um celular normal com uma tela de 6,8 polegadas, se desdobrar para 8,8 polegadas, e ainda expandir a tela enrolável para 10 polegadas. A TCL afirma que ainda está definindo as especificações técnicas do aparelho e não forneceu uma data para o lançamento. As informações são do site The Verge.<br><br>
+                    
+                    <strong> NASA vai lançar enxame de “pipas” cheias de sensores na atmosfera de Vênus:</strong> cada pipa do projeto “LEAVES” pesa 130g e voará por cerca de 9 horas coletando dados importantes sobre o estado dinâmico e a composição da atmosfera do planeta. As pipas serão lançadas de um satélite que ficará orbitando Vênus, reduzindo assim os custos e riscos da missão. As informações são da página da NASA.<br><br>
+                    
+                    <strong> Projeto de Lei cria regras para remoção de conteúdo de sites e redes sociais:</strong> a finalidade do PL 649/21 é exigir maior transparência e mecanismos que possibilitem o exercício da ampla defesa por usuários que se sentirem prejudicados com a remoção de suas postagens. As informações são da Agência Câmara Notícias.<br><br>
+                    
+                    <strong> PIX supera marca de 1 bilhão de transações:</strong> desde o lançamento, em novembro do ano passado, o sistema de pagamentos instantâneo já transacionou 787 bilhões de reais. Já são 75,6 milhões de pessoas físicas cadastradas no PIX e 5 milhões de empresas. As informações são do site Mobile Time.<br><br></p>
+            </div>
+            <!--Imagens da Novidades-->
+            <div class="conteudo">
+                <div class="img-conteudo">
+                    <img src="imagens/noticias.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--Novidades Fim-->
+
+   
+
+    <section class="contato-principal" id="contato-principal">
+        <div class="titulo-contato">
+
+            <h2 class="titulo">Entre em contato conosco</h2>
+           
+        </div>
+        <div class="formulario-contato">
+            <h3>Send Message</h3>
+            <div class="input-form">
+                <input type="text" placeholder="Nome">
+            </div>
+            <div class="input-form">
+                <input type="text" placeholder="E-mail">
+            </div>
+            <div class="input-form">
+               <textarea placeholder="Descreva Sua Duvida Aqui"></textarea>
+            </div>
+            <div class="input-form">
+                <input type="submit" value="Enviar">
+            </div>
+        </div>
+
+    </section>
+
+
+        
+    <!--JavaScript-->
+    <script src="index.js"></script>
+
+    
+    
+</body>
+</html>

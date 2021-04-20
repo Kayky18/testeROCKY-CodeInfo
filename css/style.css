@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+/*font-family: 'Roboto Slab', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+/*font-family: 'Zen Dots', cursive;*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Dots', cursive;
+    scroll-behavior: smooth;
+}
+p{
+    font-weight: 300;
+    color:#111;
+}
+body{
+    min-height: 1000px;
+}
+
+/*Fundo  e Formataçao de texto do menu*/
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../imagens/fundo-menu.jpg)no-repeat right center;
+}
+.banner .principal-menu{
+    max-width: 900px;
+    text-align: center;
+
+}
+.banner .principal-menu h2{
+    font-size: 3em;
+    color: white;
+    letter-spacing: 4px;
+}
+.banner .principal-menu p{
+    font-size: 1em;
+    color: #fff;
+    margin-top: 20px;
+}
+/*Botão menu*/
+.button{
+    font-size:1em;
+    color: #fff;
+    background: blue;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+.button:hover{
+    letter-spacing: 5px;
+}
+/*Navegação principal*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+/*Animação de descer na barra de navegação*/
+header.mexer-header{
+    background: #fff;
+    padding: 30px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+/*Logo*/
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 3em;
+    text-decoration: none;
+    line-height: 1.5em;
+    font-family: 'Zen Dots', cursive;
+}
+/* Mudar o logo de cor (na animação de descer) */
+header.mexer-header .logo{
+    color: black;
+}
+header .logo span{
+    color: blue;
+    font-family: 'Zen Dots', cursive;
+}
+
+
+/*Navegação*/
+header .navegacao{
+    position: relative;
+    display: flex;
+}
+header .navegacao li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navegacao li a{
+    text-decoration: none ;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+
+/* Mudar a barra de navegação de cor (na animação de descer) */
+header.mexer-header .navegacao li a{
+    color: black;
+}
+header .navegacao li a:hover{
+    color: blue;
+}
+
+/*Conteúdo Da Página*/
+section{
+    padding: 100px;
+    
+}
+section p{
+    font-family: 'Roboto Slab', serif;
+
+}
+
+/*Noticias*/
+.conteudo-principal{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    background: white;
+}
+.conteudo-principal .conteudo{
+    position: relative;
+    width: 45%;
+
+}
+.titulo{
+    color: #111;
+    font-size: 2em;
+}
+.conteudo-principal .conteudo .img-conteudo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.conteudo-principal .conteudo .img-conteudo img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Linguagens */
+
+.titulo-ling{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.linguagens-prog .conteudo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.linguagens-prog .conteudo .linguagens-caixa{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.8);
+}
+
+.linguagens-prog .conteudo .linguagens-caixa .img-conteudo{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.linguagens-prog .conteudo .linguagens-caixa .img-conteudo img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.linguagens-prog .conteudo .linguagens-caixa .legenda{
+    padding: 15px 0 5px;
+}
+.linguagens-prog .conteudo .linguagens-caixa .legenda h3{
+    font-weight: 400;
+    text-align: center;
+}
+.linguagens-prog .conteudo .linguagens-caixa .descricao-ling{
+    text-align: center;
+    padding: 10px;
+}
+
+.linguagens-prog .conteudo .linguagens-caixa .descricao-ling a{
+    text-decoration: none;
+    color: blue;
+    letter-spacing: 4px;
+    
+}
+.linguagens-prog .conteudo .linguagens-caixa a:hover{
+    color: red;
+}
+
+
+/*Contato*/
+.contato-principal{
+    background: url(../imagens/fundo-menu.jpg);
+    background-size: cover;
+}
+.contato-principal .titulo-contato .titulo{
+    color: white;
+}
+.formulario-contato{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    margin-top: 50px;
+}
+.formulario-contato h3{
+    font-size: 1.2;
+    margin-bottom: 20px;
+    font-weight: 200px;
+}
+.formulario-contato .input-form{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.formulario-contato .input-form input,
+.formulario-contato .input-form textarea
+{
+    width: 100%;
+    border: 1px solid #111;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.formulario-contato .input-form input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background: blue;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .5s;
+    max-width: 150px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+
+
+/*Páginas Secundarias (JavaScript, python, etc...) Banners*/
+/*JavaScript*/
+.banner-js{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../imagens/pag-javascript/js-fundo.jpg)no-repeat center;
+    background-color: yellow;  
+}
+.banner-js .texto-banner {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+.banner-js .texto-banner span{
+    color: yellow;
+}
+
+/*Python*/
+.banner-python{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../imagens/pag-python/py-fundo.jpg)no-repeat center ;
+    background-color: black;
+}
+.banner-python .texto-banner {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.banner-python .texto-banner span{
+    color: blue;
+}
+
+/*PHP*/
+.banner-php{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../imagens/pag-php/php-fundo.jpg)no-repeat center ;
+    background-color: gray;
+}
+.banner-php .texto-banner {
+    color: black;
+    font-size: 2em;
+    text-align: center;
+}
+.banner-php .texto-banner span{
+    color: purple;
+}
+/*Java*/
+.banner-java{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../imagens/pag-java/java-fundo.jpg)no-repeat center ;
+    background-color: yellow;  
+}
+.banner-java .texto-banner {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+.banner-java .texto-banner span{
+    color: orange;
+}
+
+/*C*/
+.banner-c{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../imagens/pag-c/c-fundo.jpg)no-repeat center ;
+    background-color: black;
+}
+.banner-c .texto-banner {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+.banner-c .texto-banner span{
+    color: yellow;
+}
+
+/*C++*/
+.banner-cmais{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../imagens/pag-c++/c++-fundo.jpg)no-repeat center ;
+    background-color: black;
+}
+.banner-cmais .texto-banner {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+.banner-cmais .texto-banner span{
+    color: blue;
+}
+
+
+
+/*Mobile Menu*/
+@media (max-width:990px){
+    header,
+    header.mexer-header
+    {
+        padding: 10px 20px; 
+        
+    }
+    header .logo{
+        font-size: 2.5em;
+    }
+    header .navegacao{
+        display: none;
+
+    }
+    header .navegacao.active{
+        font-size: .8em;
+        width: 100%;
+        height: calc(100% - 70px);
+        position: fixed;
+        top: 70px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navegacao li{
+        margin-left: 0;
+        padding: 30px 0;
+
+    }
+    header .navegacao li a{
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+    .menuToggle{
+        position: relative;
+        width: 45px;
+        height: 45px;
+        background: url(../imagens/mobile/menu-mobile.png)no-repeat center;
+        background-size: 40px;
+        cursor: pointer;
+        filter: invert(1);
+    }
+    .menuToggle.active{
+        background: url(../imagens/mobile/fechar-mobile.png)no-repeat center;
+        background-size: 40px;
+        filter: invert(1);
+    }
+    header.mexer-header .menuToggle{
+        filter: invert(0);
+    }
+    section{
+        padding: 20px;
+    }
+    .banner .principal-menu{
+        color: #fff;
+    }
+    /*Conteúdo no moblie*/
+    .conteudo-principal{
+        flex-direction: column;
+    }
+    .conteudo-principal .conteudo{
+        position: relative;
+        width: 100%;
+    }
+    .conteudo-principal .conteudo .img-conteudo{
+        height: 300px;
+        margin-top: 20px;
+    }
+    .linguagens-prog .conteudo{
+        margin-top: 20px;
+    }
+    .linguagens-prog .conteudo .linguagens-caixa{
+        margin: 10px;
+    }
+    .linguagens-prog .conteudo .linguagens-caixa .img-conteudo{
+        height: 260px;
+    }
+    .formulario-contato{
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:480px){
+    .banner .principal-menu h2{
+        font-size: 2em;
+        color: white;
+    }
+}
